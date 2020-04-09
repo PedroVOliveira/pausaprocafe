@@ -2065,13 +2065,79 @@ html {
   }
 }
 
-body, h1, h2, h3, h4, div {
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  body #app header nav {
+    display: none !important;
+  }
+  body #app #banner {
+    background-position-x: -65px !important;
+    background-position-y: 0 !important;
+    background-size: cover !important;
+  }
+  body #app #banner h1 {
+    font-size: 32pt !important;
+  }
+  body #app footer .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body, header, nav, ul, h1, h2, h3, h4, div {
   margin: 0;
   padding: 0;
 }
 
 body {
-  overflow-x: hidden;
+  font-family: 'Lato',sans-serif;
+}
+
+body #app header nav {
+  background: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+body #app header nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #app header nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+}
+
+body #app header nav .container ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 13pt;
+  border-bottom: 1px solid white;
+  text-shadow: black 5px 5px 5px;
+}
+
+body #app header nav .container ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 body #app section#banner {
@@ -2079,6 +2145,30 @@ body #app section#banner {
   background-position-x: calc(100% - 500px);
   background-position-y: calc(100% - 300px);
   height: 100vh;
+  width: 100%;
+}
+
+body #app section#banner .redes {
+  position: absolute;
+  top: calc(50% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  color: white;
+}
+
+body #app section#banner .redes a {
+  padding: 15px 15px;
+  margin: 5px;
+  font-size: 12pt;
+  color: white;
+  background-color: #8949ff;
+  border-radius: 26px;
 }
 
 body #app section#banner .banner-item {
@@ -2140,5 +2230,47 @@ body #app section#banner .banner-item p {
   font-family: 'Lato';
   text-shadow: black 5px 5px 5px;
   font-size: 14pt;
+}
+
+body #app footer {
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+body #app footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body #app footer .container img {
+  padding: 12px 0;
+  border-radius: 50%;
+  width: 70px;
+  display: none;
+}
+
+body #app footer .container div.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+body #app footer .container div.center small {
+  margin: 10px 0;
+  padding: 0px 50px;
+  color: white;
+  font-size: 10pt;
+  text-shadow: 6px 6px 6px black;
 }
 /*# sourceMappingURL=main.css.map */
