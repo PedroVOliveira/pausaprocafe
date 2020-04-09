@@ -2065,6 +2065,36 @@ html {
   }
 }
 
+body #app .redes {
+  position: absolute;
+  top: calc(50% - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  color: white;
+}
+
+body #app .redes a {
+  padding: 15px 15px;
+  margin: 5px;
+  font-size: 12pt;
+  color: white;
+  background-color: #8949ff;
+  border-radius: 26px;
+}
+
+body #app section#videos {
+  background-image: url("../../assets/img/background2.jpg");
+  background-position-x: calc(100% - 500px);
+  background-position-y: calc(100% - 300px);
+  height: 100vh;
+}
+
 @media (max-width: 738px) {
   body {
     overflow-x: hidden !important;
@@ -2146,29 +2176,6 @@ body #app section#banner {
   background-position-y: calc(100% - 300px);
   height: 100vh;
   width: 100%;
-}
-
-body #app section#banner .redes {
-  position: absolute;
-  top: calc(50% - 100px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  right: 0;
-  color: white;
-}
-
-body #app section#banner .redes a {
-  padding: 15px 15px;
-  margin: 5px;
-  font-size: 12pt;
-  color: white;
-  background-color: #8949ff;
-  border-radius: 26px;
 }
 
 body #app section#banner .banner-item {

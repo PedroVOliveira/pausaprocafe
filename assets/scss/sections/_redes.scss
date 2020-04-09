@@ -1,0 +1,22 @@
+body {
+    #app {
+
+        .redes {
+            position: absolute;
+            top: calc(50% - 100px);
+            display:flex;
+            flex-direction: column;
+            right: 0;
+            color:white;
+        
+            a {
+                padding:15px 15px;
+                margin:5px;
+                font-size:12pt;
+                color:white;
+                background-color:#8949ff;
+                border-radius:26px;
+            }
+        }
+    }
+}
