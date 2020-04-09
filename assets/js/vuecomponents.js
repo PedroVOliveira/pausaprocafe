@@ -24,7 +24,7 @@ Vue.component('footer-item',{
                 <footer>
                         <div class="container">
                             <div class="center">
-                                <small>Contato:Pausaprocafee@gmail.com</small>
+                                <small>Contato:pausaprocafee@gmail.com</small>
                                 <small>Desenvolvido por Pedro Oliveira</small>
                             </div>
                         </div>

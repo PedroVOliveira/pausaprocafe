@@ -1,0 +1,37 @@
+#app {
+
+    header {
+        nav {
+            background:transparent;
+            position:fixed;
+            width:100%;
+
+            .container {
+                display:flex;
+                align-items: center;
+                flex-direction: column;
+                
+                ul {
+                    display:flex;
+                    width:100%;
+                    justify-content: center;
+                    padding-top:80px;
+                    
+
+                    li {
+                        list-style: none;
+                        padding:10px;
+                        font-size:13pt;
+                        border-bottom: 1px solid white;
+                        text-shadow:black 5px 5px 5px;
+                        
+                        a {
+                            text-decoration:none;
+                            color:white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
