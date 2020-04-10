@@ -1,3 +1,6 @@
+body {
+    overflow-y: hidden;
+}
 #app {
     section#discografia {
         background-image:url('../../assets/img/background5.jpg');
@@ -7,6 +10,26 @@
         background-size: cover;
         background-attachment: fixed;
         // padding-bottom: 500px;
+        padding-top:150px;
         height:100vh;
+
+        .discos {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            // padding-bottom:500px;
+
+            .disco-item {
+                padding:0 65px;
+                color:white;
+                
+                h3 {
+                    font-family: 'Fjalla One', sans-serif;
+                    padding:5px 0;
+                    text-shadow: 3px 3px 3px black;
+                }
+            }
+        }
+
     }
 }

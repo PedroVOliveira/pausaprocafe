@@ -2125,6 +2125,7 @@ html {
 }
 
 #app header nav .container ul li {
+  font-family: 'Fjalla One', sans-serif;
   list-style: none;
   padding: 10px;
   font-size: 13pt;
@@ -2280,6 +2281,10 @@ section#banner .banner-item p {
   height: 100vh;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 #app section#discografia {
   background-image: url("../../assets/img/background5.jpg");
   background-position: center;
@@ -2287,7 +2292,31 @@ section#banner .banner-item p {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  padding-top: 150px;
   height: 100vh;
+}
+
+#app section#discografia .discos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#app section#discografia .discos .disco-item {
+  padding: 0 65px;
+  color: white;
+}
+
+#app section#discografia .discos .disco-item h3 {
+  font-family: 'Fjalla One', sans-serif;
+  padding: 5px 0;
+  text-shadow: 3px 3px 3px black;
 }
 
 #app section#videos {
