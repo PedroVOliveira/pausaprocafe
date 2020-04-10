@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/scss/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Pausa pro Café</title>
 </head>
 <body>
     <div id="app">
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <navbar-item></navbar-item>
+                </div>
+            </nav>
+        </header>
+        <redes-item></redes-item>
         <section id="videos">
-                <header>
-                        <nav class="navbar">
-                            <div class="container">
-                                <!-- <img src="assets/img/logo.jpg">  -->
-                                <!-- <ul>
-                                    <li><a href="index.html">Início</a></li>
-                                    <li><a href="#">Discografia</a></li>
-                                    <li><a href="videos.html">Vídeos</a></li>
-                                    <li><a href="#">Sobre Nós</a></li>
-                                    <li><a href="#">Agenda</a></li>
-                                    <li><a href="#">Contato</a></li>
-                                </ul> -->
-                                <navbar-item></navbar-item>
-                            </div>
-                        </nav>
-                    </header>
-                    <redes-item></redes-item>
+            <div class="container">
+                <!-- <a data-fancybox="gallery" href="favi.png"><img src="favi.png"></a> -->
+                <!-- <video-item>
+                    <h3 slot="titulo">Teste</h3>
+                    <a slot="video" data-fancybox href="https://www.youtube.com/watch?v=UiEqXVmHg7o"></a>
+                </video-item>
+                <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0">
+                    
+                </a>
+                <embed src="https://www.youtube.com/watch?v=UiEqXVmHg7o"/> -->
+            </div>
         </section>
+        <footer-item></footer-item>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="assets/js/vuecomponents.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </html>

@@ -4,6 +4,15 @@ body, header, nav, ul, h1, h2, h3, h4, div {
   font-family: 'Lato',sans-serif;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: #8949ff;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -2121,7 +2130,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 #app header nav .container ul li {
@@ -2136,6 +2145,10 @@ html {
 #app header nav .container ul li a {
   text-decoration: none;
   color: white;
+}
+
+#app header nav .container ul li a:hover {
+  color: #8949ff;
 }
 
 body #app .redes {
@@ -2282,11 +2295,9 @@ section#banner .banner-item p {
 }
 
 #app section#discografia {
-  background-image: url("../../assets/img/background5.jpg");
-  background-position: center;
-  background-position-y: calc(30% - 100px);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../../assets/img/background3.jpg");
+  background-position-x: calc(100% - 400px);
+  background-position-y: calc(100% - 350px);
   background-attachment: fixed;
   padding-top: 150px;
   height: 100vh;
@@ -2324,10 +2335,11 @@ section#banner .banner-item p {
 }
 
 #app section#sobre {
-  background-image: url("../../assets/img/background3.jpg");
-  background-position-x: calc(100% - 400px);
-  background-position-y: calc(100% - 350px);
-  background-attachment: fixed;
+  background-image: url("../../assets/img/background5.jpg");
+  background-position: center;
+  background-position-y: calc(30% - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 

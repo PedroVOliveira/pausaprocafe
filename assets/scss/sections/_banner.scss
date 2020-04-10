@@ -1,3 +1,4 @@
+@import '../assets/mixins';
 section#banner {
     background-image: url(../img/background.jpg);
     background-position-x: calc(100% - 500px);
@@ -20,6 +21,7 @@ section#banner {
             color:white;
             text-shadow:black 5px 5px 5px;
         }
+
         h1::after {
             content: '|';
             margin-left:5px;

@@ -1,5 +1,7 @@
 // Componentes Globais
-@import './sections/reset';
+@import './assets/reset';
+@import './assets/mixins';
+@import './assets/colors';
 @import '../scss/dist/bootstrap-grid';
 @import './sections/mobile';
 @import './sections/navbar';

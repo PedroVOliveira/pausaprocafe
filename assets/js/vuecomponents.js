@@ -32,6 +32,16 @@ Vue.component('footer-item',{
 
                `
 })
+
+Vue.component('video-item',{
+    template: `
+                <div class="video-item">
+                    <slot name="titulo"></slot>
+                    <slot name="video"></slot>
+                </div>
+              `
+})
+
 let vm = new Vue({
     el: '#app',
     data: {
