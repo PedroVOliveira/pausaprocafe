@@ -2281,10 +2281,6 @@ section#banner .banner-item p {
   height: 100vh;
 }
 
-body {
-  overflow-y: hidden;
-}
-
 #app section#discografia {
   background-image: url("../../assets/img/background5.jpg");
   background-position: center;
