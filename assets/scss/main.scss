@@ -1,9 +1,20 @@
+// Componentes Globais
 @import './sections/reset';
 @import '../scss/dist/bootstrap-grid';
+@import './sections/mobile';
 @import './sections/navbar';
-@import './sections/banner';
 @import './sections/redes';
 @import './sections/footer';
+/* Index */
 @import './sections/banner';
 @import './sections/videos';
-@import './sections/mobile';
+// Discografia 
+@import './sections/discografia';
+//Videos 
+@import './sections/videos';
+// Sobre nós
+@import './sections/sobre';
+// Agenda
+@import './sections/agenda';
+// Contato
+@import './sections/contato';

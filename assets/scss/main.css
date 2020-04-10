@@ -2071,6 +2071,29 @@ html {
   }
 }
 
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  body #app header nav {
+    display: none !important;
+  }
+  body #app #banner {
+    background-position-x: -65px !important;
+    background-position-y: 0 !important;
+    background-size: cover !important;
+  }
+  body #app #banner h1 {
+    font-size: 32pt !important;
+  }
+  body #app footer .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #app header nav {
   background: transparent;
   position: fixed;
@@ -2112,75 +2135,6 @@ html {
 #app header nav .container ul li a {
   text-decoration: none;
   color: white;
-}
-
-section#banner {
-  background-image: url(../img/background.jpg);
-  background-position-x: calc(100% - 500px);
-  background-position-y: calc(100% - 300px);
-  height: 100vh;
-  width: 100%;
-}
-
-section#banner .banner-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  color: white;
-  height: 100vh;
-}
-
-section#banner .banner-item h1 {
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 42pt;
-  color: white;
-  text-shadow: black 5px 5px 5px;
-}
-
-section#banner .banner-item h1::after {
-  content: '|';
-  margin-left: 5px;
-  opacity: 1;
-  -webkit-animation: pisca 1s infinite;
-          animation: pisca 1s infinite;
-}
-
-@-webkit-keyframes pisca {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes pisca {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-section#banner .banner-item p {
-  font-family: 'Lato';
-  text-shadow: black 5px 5px 5px;
-  font-size: 14pt;
 }
 
 body #app .redes {
@@ -2247,10 +2201,12 @@ footer .container div.center small {
   text-shadow: 6px 6px 6px black;
 }
 
+/* Index */
 section#banner {
   background-image: url(../img/background.jpg);
   background-position-x: calc(100% - 500px);
   background-position-y: calc(100% - 300px);
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -2286,6 +2242,18 @@ section#banner .banner-item h1::after {
           animation: pisca 1s infinite;
 }
 
+@-webkit-keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes pisca {
   0% {
     opacity: 1;
@@ -2308,29 +2276,50 @@ section#banner .banner-item p {
   background-image: url("../../assets/img/background2.jpg");
   background-position-x: calc(100% - 500px);
   background-position-y: calc(100% - 300px);
+  background-attachment: fixed;
   height: 100vh;
 }
 
-@media (max-width: 738px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  body #app header nav {
-    display: none !important;
-  }
-  body #app #banner {
-    background-position-x: -65px !important;
-    background-position-y: 0 !important;
-    background-size: cover !important;
-  }
-  body #app #banner h1 {
-    font-size: 32pt !important;
-  }
-  body #app footer .center {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+#app section#discografia {
+  background-image: url("../../assets/img/background5.jpg");
+  background-position: center;
+  background-position-y: calc(30% - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#app section#videos {
+  background-image: url("../../assets/img/background2.jpg");
+  background-position-x: calc(100% - 500px);
+  background-position-y: calc(100% - 300px);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#app section#sobre {
+  background-image: url("../../assets/img/background3.jpg");
+  background-position-x: calc(100% - 400px);
+  background-position-y: calc(100% - 350px);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#app section#agenda {
+  background-image: url("../../assets/img/background2.jpg");
+  background-position-x: calc(100% - 500px);
+  background-position-y: calc(100% - 300px);
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#app section#contato {
+  background-image: url(../img/background.jpg);
+  background-position-x: calc(100% - 500px);
+  background-position-y: calc(100% - 300px);
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
