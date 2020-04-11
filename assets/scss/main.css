@@ -2582,12 +2582,10 @@ section#banner .banner-item .spotify a {
 }
 
 @media (max-width: 738px) {
-  .redes {
-    display: none !important;
-  }
   section#sobre {
     background-position-x: 0 !important;
     background-position-y: 0 !important;
+    height: 1600px !important;
   }
   section#sobre .sobre-item {
     width: 100%;
