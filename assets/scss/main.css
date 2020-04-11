@@ -5,12 +5,82 @@ body, header, nav, ul, h1, h2, h3, h4, div {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8949ff;
+  background-image: linear-gradient(25deg, #5398ce, #8949FF, #E93279);
   border-radius: 6px;
 }
 
 ::-webkit-scrollbar {
   width: 12px;
+}
+
+@-webkit-keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes alternativeColor {
+  0% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  50% {
+    background-image: linear-gradient(15deg, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  100% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+@keyframes alternativeColor {
+  0% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  50% {
+    background-image: linear-gradient(15deg, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  100% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
 }
 
 /*!
@@ -2081,21 +2151,7 @@ html {
 }
 
 @media (max-width: 738px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  body #app header nav {
-    display: none !important;
-  }
-  body #app #banner {
-    background-position-x: -65px !important;
-    background-position-y: 0 !important;
-    background-size: cover !important;
-  }
-  body #app #banner h1 {
-    font-size: 32pt !important;
-  }
-  body #app footer .center {
+  footer .center {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2157,6 +2213,16 @@ html {
   transition: all .5s ease;
 }
 
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  body #app header nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 body #app .redes {
   position: fixed;
   top: calc(50% - 100px);
@@ -2169,6 +2235,7 @@ body #app .redes {
           flex-direction: column;
   right: 0;
   color: white;
+  z-index: 99;
 }
 
 body #app .redes a {
@@ -2223,6 +2290,41 @@ footer .container div.center small {
 }
 
 /* Index */
+@keyframes pisca {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes alternativeColor {
+  0% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  50% {
+    background-image: linear-gradient(15deg, white, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+  100% {
+    background-image: linear-gradient(15deg, #E93279, #E93279);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
 section#banner {
   background-image: url(../img/background.jpg);
   background-position-x: calc(100% - 500px);
@@ -2253,6 +2355,9 @@ section#banner .banner-item h1 {
   font-size: 42pt;
   color: white;
   text-shadow: black 5px 5px 5px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin-top: -65px;
 }
 
 section#banner .banner-item h1::after {
@@ -2263,34 +2368,42 @@ section#banner .banner-item h1::after {
           animation: pisca 1s infinite;
 }
 
-@-webkit-keyframes pisca {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes pisca {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 section#banner .banner-item p {
   font-family: 'Lato';
   text-shadow: black 5px 5px 5px;
   font-size: 14pt;
+}
+
+section#banner .banner-item .spotify {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#banner .banner-item .spotify a {
+  background-image: linear-gradient(25deg, #8949FF, #E93279);
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 6px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (max-width: 738px) {
+  #banner {
+    background-position-x: -65px !important;
+    background-position-y: 0 !important;
+    background-size: cover !important;
+  }
+  #banner h1 {
+    font-size: 32pt !important;
+    margin-top: 0 !important;
+  }
 }
 
 #app section#videos {
@@ -2332,6 +2445,18 @@ section#banner .banner-item p {
   transition: all .3s ease;
   background-color: #E93279;
   background-image: linear-gradient(45deg, transparent, transparent);
+}
+
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden;
+  }
+  body section#videos {
+    height: 220vh !important;
+  }
+  body section#videos .video-item iframe {
+    width: 100% !important;
+  }
 }
 
 #app section#discografia {
@@ -2366,6 +2491,24 @@ section#banner .banner-item p {
   text-shadow: 3px 3px 3px black;
 }
 
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden;
+  }
+  body section#discografia {
+    height: 130vh !important;
+  }
+  body section#discografia .discos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section#discografia .discos .disco-item {
+    padding: 0 0px !important;
+  }
+}
+
 #app section#videos {
   background-image: url("../../assets/img/background2.jpg");
   background-position-x: calc(100% - 500px);
@@ -2405,6 +2548,18 @@ section#banner .banner-item p {
   transition: all .3s ease;
   background-color: #E93279;
   background-image: linear-gradient(45deg, transparent, transparent);
+}
+
+@media (max-width: 738px) {
+  body {
+    overflow-x: hidden;
+  }
+  body section#videos {
+    height: 220vh !important;
+  }
+  body section#videos .video-item iframe {
+    width: 100% !important;
+  }
 }
 
 #app section#sobre {

@@ -46,3 +46,20 @@
         }
     }
 }
+
+@media (max-width:738px) {  
+    body {
+        overflow-x:hidden!important;
+        #app {
+            header {
+                
+                nav {
+
+                    ul {
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+    }
+}

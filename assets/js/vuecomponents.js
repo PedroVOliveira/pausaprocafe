@@ -13,7 +13,7 @@ Vue.component('redes-item',{
     template: `
                 <div class="redes">
                     <a href="https://open.spotify.com/artist/7eF965AyVu2dhte59lKT1g?si=p8TwA3UVRs6m0yrwqMErcw" target="_blank"><i class="fab fa-spotify"></i></a>
-                    <a href="instagram.com/pausaprocafee" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/pausaprocafee/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.youtube.com/channel/UCTWY1gzhBRoKTrtlBM_kwPw" target="_blank"><i class="fab fa-youtube"></i></a>                    
                 </div>
     

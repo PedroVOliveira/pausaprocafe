@@ -28,3 +28,21 @@
 
     }
 }
+
+@media (max-width:738px) {
+    body {
+        overflow-x:hidden;
+    
+        section#discografia {
+            height:130vh!important;
+            
+            .discos {
+                flex-direction: column;
+                
+                .disco-item {
+                    padding:0 0px!important;
+                }
+            }
+        }
+    }
+}

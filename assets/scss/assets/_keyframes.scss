@@ -1,0 +1,36 @@
+@keyframes pisca {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes alternativeColor {
+    0% {
+        
+        // background-image: linear-gradient(25deg, #5398ce,#8949FF,#E93279 );
+        background-image:linear-gradient(15deg,#E93279,#E93279 );
+        -webkit-background-clip: text;
+ 
+        transition: all 1s ease;
+    }
+    50% {
+        
+        background-image: linear-gradient(15deg,white,white );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s ease;
+    }
+    100% {
+        
+        background-image:linear-gradient(15deg,#E93279,#E93279 );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 1s ease;
+    }
+}

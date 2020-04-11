@@ -35,3 +35,19 @@
             }
         }
 }
+
+@media (max-width:738px) {
+    body {
+        overflow-x:hidden;
+        
+        section#videos {
+            height:220vh!important;
+
+            .video-item {
+                iframe {
+                    width:100% !important;
+                }
+            }
+        }
+    }
+}

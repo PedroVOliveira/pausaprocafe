@@ -1,21 +1,14 @@
 @media (max-width:738px) {
-    body {
-        overflow-x:hidden!important;
-        #app {
-            header {
-                nav {
-                    display:none!important;
-                }
-            }
-            #banner {
-                background-position-x: -65px!important;
-                background-position-y: 0!important;
-                background-size: cover!important;
+    
+            // #banner {
+            //     background-position-x: -65px!important;
+            //     background-position-y: 0!important;
+            //     background-size: cover!important;
 
-                h1 {
-                    font-size:32pt!important;
-                }
-            }
+            //     h1 {
+            //         font-size:32pt!important;
+            //     }
+            // }
 
             footer {
                 .center {
@@ -23,5 +16,4 @@
                 }
             }
         }
-    }
-} 
+ 
