@@ -1,8 +1,7 @@
 body {
     #app {
-
         .redes {
-            position: absolute;
+            position: fixed;
             top: calc(50% - 100px);
             display:flex;
             flex-direction: column;

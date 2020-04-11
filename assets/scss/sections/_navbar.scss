@@ -1,4 +1,4 @@
-@import './assets/mixins';
+// @import './assets/mixins';
 #app {
 
     header {
@@ -6,6 +6,7 @@
             background:transparent;
             position:fixed;
             width:100%;
+            z-index: 99;
 
             .container {
                 display:flex;
@@ -30,9 +31,12 @@
                         a {
                             text-decoration:none;
                             color:white;
+                            transition: all .5s ease;
                             
                             &:hover {
-                                color:#8949ff;;
+                                color:#E93279;
+                                text-shadow: white 2px 2px 2px;
+                                transition: all .5s ease;
                             }
                         }
                         

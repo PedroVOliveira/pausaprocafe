@@ -34,10 +34,10 @@ Vue.component('footer-item',{
 })
 
 Vue.component('video-item',{
-    template: `
+    template: `                    
                 <div class="video-item">
-                    <slot name="titulo"></slot>
                     <slot name="video"></slot>
+                    <slot name="titulo"></slot>
                 </div>
               `
 })
