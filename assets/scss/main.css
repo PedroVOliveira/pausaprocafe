@@ -2431,7 +2431,7 @@ section#banner .banner-item .spotify a {
 }
 
 #app section#videos .yt a {
-  background-image: linear-gradient(25deg, #8949FF, #E93279);
+  background-color: #ff0000;
   color: white;
   text-decoration: none;
   padding: 20px 40px;
@@ -2452,7 +2452,7 @@ section#banner .banner-item .spotify a {
     overflow-x: hidden;
   }
   body section#videos {
-    height: 220vh !important;
+    height: 1800px !important;
   }
   body section#videos .video-item iframe {
     width: 100% !important;
@@ -2496,7 +2496,7 @@ section#banner .banner-item .spotify a {
     overflow-x: hidden;
   }
   body section#discografia {
-    height: 130vh !important;
+    height: 1000px !important;
   }
   body section#discografia .discos {
     -webkit-box-orient: vertical;
@@ -2534,7 +2534,7 @@ section#banner .banner-item .spotify a {
 }
 
 #app section#videos .yt a {
-  background-image: linear-gradient(25deg, #8949FF, #E93279);
+  background-color: #ff0000;
   color: white;
   text-decoration: none;
   padding: 20px 40px;
@@ -2555,7 +2555,7 @@ section#banner .banner-item .spotify a {
     overflow-x: hidden;
   }
   body section#videos {
-    height: 220vh !important;
+    height: 1800px !important;
   }
   body section#videos .video-item iframe {
     width: 100% !important;
@@ -2568,7 +2568,30 @@ section#banner .banner-item .spotify a {
   background-position-y: calc(30% - 100px);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
+  padding-top: 150px;
+}
+
+#app section#sobre .sobre-item .container p {
+  line-height: 1.5em;
+  text-align: justify;
+  color: white;
+  text-shadow: black 4px 4px 4px;
+  padding-top: 15px;
+}
+
+@media (max-width: 738px) {
+  .redes {
+    display: none !important;
+  }
+  section#sobre {
+    background-position-x: 0 !important;
+    background-position-y: 0 !important;
+  }
+  section#sobre .sobre-item {
+    width: 100%;
+  }
 }
 
 #app section#agenda {
@@ -2586,5 +2609,29 @@ section#banner .banner-item .spotify a {
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
+}
+
+#app section#contato .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+#app section#contato .contact h3 {
+  color: white;
+  font-size: 18pt;
+  text-shadow: black 3px 3px 3px;
+  padding-top: 10px;
 }
 /*# sourceMappingURL=main.css.map */
